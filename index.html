@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    
+<!-- Last updated: April 26, 2025, 5:23 PM -->
+
+    <link rel="stylesheet" href="MattPittman_styles.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="ECU Logo copy.png" alt="ECU Logo">
+    </div>
+    <nav>
+        <h1>Page Navigation</h1>
+        <ul>
+            <li><a href="#about me">About Me</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#my characteristics">My Characteristics</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <section id="about me">
+        <h1>About Me</h1>
+        <p>
+            <strong>My name is Matt Pittman</strong> <br><br>
+            <i>My major is Computer Science</i> <br>
+            <a href="https://guide-images.cdn.ifixit.com/igi/BCU4AgbFicGvFcZA.medium">Computer Image</a><br><br>
+            <u>I am a Junior</u> <br><br>
+        </p>
+    </section>
+    <hr>
+    <section id="classes">
+        <h1>Classes</h1>
+        <div class="container">
+            <div class="grid-1">
+            <section id="businesscalc">
+            <h2>(MATH-2613) Calc for Bus, Life & Soc Sci</h2>
+            <p>In this class we learn Calculus and learn how it can be applied to fields outside of mathematics.</p>
+            </section>   
+            </div>
+
+            <div class="grid-2">
+            <section id="honors">
+            <h2>(HNRS-2313) Endur Qstn: Persp Fr Rhet & Rs</h2>
+            <p>In this class we prepare for our honors projects/theses.</p>
+            </section>   
+            </div>
+
+            <div class="grid-3">
+            <section id="internetprogramming">
+            <h2>(CMPSC-3323) Internet Programming</h2>
+            <p>In this class we learn how to program for the web, learning HTML, CSS, and JavaScript.</p>
+            </section>   
+            </div>
+            
+            <div class="grid-4">
+            <section id="webdevelopment">
+            <h2>(ITM-3423) Web Development</h2>
+            <p>In this class we learn how to program for the web, learning HTML, CSS, and JavaScript.</p>
+            </section>   
+            </div>
+
+            <div class="grid-5">
+            <section id="computerliteracy">
+            <h2>(CMPSC-1513) Computer Literacy</h2>
+            <p>In this course we learn basic computer skills.</p>
+            </section>   
+            </div>      
+
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="js_examples">
+        <h1>JavaScript and Forms Examples</h1>
+        <div class="container-js">
+            <div class="grid-6">
+                <section id="arithmetic">
+                    <h2>Arithmetic</h2>
+                    <p>Perform basic arithmetic.</p>
+                    <form name="ArithmeticForm">
+                        <label>First Number:</label>
+                        <input type="number" name="firstarithmeticnumber" placeholder="1"/>
+                        <br>
+                        <label>Second Number:</label>
+                        <input type="number" name="secondarithmeticnumber" placeholder="2"/>
+                        <br><br>
+                        <legend>Select Operator:</legend>
+                        <input type="radio" id="add" name="arithmeticoperator" value="Addition">
+                        <label for="add">Addition</label><br>
+                        <input type="radio" id="subtract" name="arithmeticoperator" value="Subtraction">
+                        <label for="subtract">Subtraction</label><br>
+                        <input type="radio" id="multiply" name="arithmeticoperator" value="Multiplication">
+                        <label for="multiply">Multiplication</label><br>
+                        <input type="radio" id="divide" name="arithmeticoperator" value="Division">
+                        <label for="divide">Division</label><br><br>
+                        <button type="button" onclick="performArithmetic()">Calculate</button>
+                    </form>
+                </section>
+            </div>
+        
+            <div class="grid-7">
+                <section id="factorial">
+                    <h2>Factorial</h2>
+                    <p>Calculate the factorial of a number.</p>
+                    <form name="FactorialForm">
+                        <label>Enter a number:</label>
+                        <input type="number" name="factorialnumber" placeholder="5">
+                        <br><br>
+                        <button type="button" onclick="performFactorial()">Calculate Factorial</button>
+                    </form>
+                </section>
+            </div>
+        
+            <div class="grid-8">
+                <section id="Fibonacci">
+                    <h2>Fibonacci</h2>
+                    <p>Find the nth Fibonacci number.</p>
+                    <form name="FibonacciForm">
+                        <label>Enter n:</label>
+                        <input type="number" name="fibonaccinumber" placeholder="7">
+                        <br><br>
+                        <button type="button" onclick="performFibonacci()">Get Fibonacci Number</button>
+                    </form>
+                </section>
+            </div>
+        
+            <div class="grid-9">
+                <section id="range">
+                    <h2>Min, Max, and Range</h2>
+                    <p>Enter three numbers to find the min, max, and range.</p>
+                    <form name="RangeForm">
+                        <label>Number 1:</label>
+                        <input type="number" name="num1" placeholder="3"/>
+                        <br>
+                        <label>Number 2:</label>
+                        <input type="number" name="num2" placeholder="9"/>
+                        <br>
+                        <label>Number 3:</label>
+                        <input type="number" name="num3" placeholder="6"/>
+                        <br><br>
+                        <button type="button" onclick="performrange()">Calculate</button>
+                    </form>
+                </section>
+            </div>
+        
+            <div class="grid-10">
+                <section id="mailinglist">
+                    <h2>Mailing List Sign-Up</h2>
+                    <p>We'd love to keep you updated on our offerings!</p>
+                    <form name="SignupForm" onsubmit="addSignup(); return false;">
+                        <label for="firstname">First Name:</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Matt"><br>
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Pittman"><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Matt@gmail.com"><br>
+                        <label for="zipcode">ZIP Code:</label>
+                        <input type="text" id="zipcode" name="zipcode" placeholder="12345"><br><br>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </form>
+                    <br>
+                    <div id="signupList"></div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="my characteristics">
+        <p>
+            3 Things About Me <br>
+            <ul>
+                <li>Brown Hair</li>
+                <li>Green Eyes</li>
+                <li>5'11 Tall</li>
+                <br>
+                <li><iframe width="600" height="450" src="https://www.youtube.com/embed/HsXaVV6fFDY" title="Unplugged - What is Computer Science?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+            </ul>
+            <br><br>
+            <a href="https://www.ecok.edu/">ECU Homepage</a>
+        </p>
+    </section>
+    
+    <script src="MattPittman_AboutMe.js"></script>
+</body>
+</html>
